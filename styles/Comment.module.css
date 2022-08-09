@@ -1,0 +1,134 @@
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 90%;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.date {
+  color: #0070f3;
+}
+
+.body {
+  margin: 10px;
+}
+
+.icon__text {
+  font-size: 15px !important;
+  color: #000000;
+  margin-left: 5px;
+}
+.reply__input__form {
+  margin-top: 20px;
+}
+.reply__input {
+  border-radius: 50px;
+  height: 40px;
+  width: 90%;
+  border: 1px solid hsl(235, 50%, 74%);
+  outline: none;
+  padding-left: 10px;
+}
+.reply__button {
+  border-radius: 50px;
+  height: 34px;
+  width: 60px;
+  margin-left: -64px;
+  background-color: #0070f3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.reply__button[disabled] {
+  background-color: #eaeaea;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.comment__input__form {
+  display: flex;
+}
+
+.comment__input {
+  flex-grow: 1;
+  resize: none;
+  height: 70px;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: inherit;
+  font-family: inherit;
+  border: 2px solid hsl(235, 50%, 74%);
+  line-height: 1.4;
+}
+
+.comment__button {
+  margin-left: 10px;
+}
+
+.nested__comments {
+  padding-left: 0.5rem;
+  flex-grow: 1;
+}
+
+.nested__comments__stack {
+  display: flex;
+}
+
+.collapse__line {
+  border: none;
+  background: none;
+  padding: 0;
+  width: 15px;
+  height: 150px;
+  margin-top: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transform: translateX(-50%);
+}
+
+.collapse__line:hover::before,
+.collapse__line:focus-visible::before {
+  background-color: hsl(235, 100%, 60%);
+}
+
+.collapse__line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: hsl(235, 50%, 74%);
+  transition: background-color 100ms ease-in-out;
+}
